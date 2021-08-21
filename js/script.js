@@ -96,7 +96,10 @@ document.getElementById("promo-code-btn").addEventListener("click", function () 
         const newupdate = totalBotomPrice * 20 / 100;
         const updatePrice = totalBotomPrice - newupdate
         totalBotomText.innerText = updatePrice; 
-        document.getElementById("promo-code-btn").disabled=true;
+        document.getElementById("promo-code-btn").disabled = true;
+        promoInput.style.display = 'none';
+        document.getElementById("promo-code-btn").innerText = "Pomo Code Applied!!";
+        document.getElementById("promo-code-btn").style.cssText = "background-color:red; width:auto; padding-left: 7%; padding-right: 7%; height: 50px; text-align:center; color:white; font-weight: 600;"
 
     }
     // Wrong Input alert
@@ -104,7 +107,5 @@ document.getElementById("promo-code-btn").addEventListener("click", function () 
         alert("Opps Wrong Promo Code!!!") 
     }
 
-  
-    promoInput.value = '';
-
 });
+
