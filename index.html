@@ -23,55 +23,55 @@
           <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 dfficiency cores, 7-Core GPU,and 16-core natural Engine 8GB unified Memory 256GB SSD Storage Two Thunderbolt / USB 4-port Magic Mouse Magic Keyboard-US English </p>
           <div class="my-5">
               <h3>Memory</h3>
-              <button type="button" class="btn btn-outline-secondary">8GB unified memory</button>
-              <button type="button" class="btn btn-outline-secondary">16GB unified memory </button>
+              <button id="ram-8gb" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+              <button id="ram-16gb" type="button" class="btn btn-outline-secondary">16GB unified memory </button>
           </div>
           <div class="my-5">
               <h3>Storage</h3>
-              <button type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
-              <button type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
-              <button type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
+              <button id="ssd-256gb" type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
+              <button id="ssd-512gb" type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
+              <button id="ssd-1tb" type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
              
           </div>
           <div class="my-5">
-              <h3>Choose your deleary option</h3>
-              <button type="button" class="btn btn-outline-secondary">friday,Aug 26 FREE Prime Dellivary</button>
-              <button type="button" class="btn btn-outline-secondary">friday,Aug 30 Deleary charge $20</button>
+              <h3>Choose your delivery option</h3>
+              <button id="prime-delivary" type="button" class="btn btn-outline-secondary">friday,Aug 26 FREE Prime Delivary</button>
+              <button id="charge-delivary" type="button" class="btn btn-outline-secondary">friday,Aug 30 Delivary charge $20</button>
           </div>
           <div class="fw-bold">
             <table class="table">
                 <tbody>
                   <tr>
                     <th scope="row">Best price</th>
-                    <td id="total-task">$1299</td>
+                    <td>$ <span id="best-price"> 1299</span></td>
                   </tr>
                   <tr>
                     <th scope="row">Extra memory cost</th>
-                    <td id="done-task">$0</td>
+                    <td>$<span id="memory-cost">0</span></td>
                   </tr>
-                  <tr>
+                  <tr >
                     <th scope="row">Exta storage cost</th>
-                    <td id="undone-task">$0</td>
+                    <td>$ <span id="storage-cost">0</span></td>
                   </tr>
                   <tr>
                     <th scope="row">Delivery charge</th>
-                    <td id="undone-task">$0</td>
+                    <td>$ <span id="delivery-cost"> 0</span></td>
                   </tr>
                    <tfoot>
                     <tr>
                         <th scope="row">Total Price</th>
-                        <td id="undone-task">$1299</td>
+                        <td >$ <span id="total-price">1299</span></td>
                       </tr>         
                    </tfoot>
                        
                 </tbody>
               </table>
           </div>
-          <div class="my-3">
+          <div class="my-4">
              <h4>Add Promo Code</h4> 
              <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Add promo code" >
-                <button type="button" class="btn btn-danger">Apply</button>
+                <input id="promo-code-input" class="form-control me-2" type="text" placeholder="Add promo code" >
+                <button id="promo-code-btn" type="button" class="btn btn-danger">Apply</button>
               </form>
           </div>
         </div>           
@@ -80,7 +80,7 @@
    <section class="container">
        <div class="text-center">
           <hr>
-          <h2>Total:$1299</h2>
+          <h2>Total:$<span id="discount-price">1299</span></h2>
        </div>  
    </section>
     
