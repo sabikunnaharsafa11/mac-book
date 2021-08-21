@@ -1,7 +1,7 @@
 
 
 // Common Function 
-function common() {
+function commonAll() {
     const bestPriceText = document.getElementById("best-price").innerText;
     const bestPrice = parseInt(bestPriceText);
 
@@ -15,33 +15,34 @@ function common() {
     const deliveryPrice = parseInt(deliveryText);
 
     let totalprice = document.getElementById("total-price");
-    totalprice.innerText = bestPrice + memoryPrice + storagePrice + deliveryPrice
+    totalprice.innerText = (bestPrice + memoryPrice + storagePrice + deliveryPrice);
+    document.getElementById("discount-price").innerText = totalprice.innerText;
     return totalprice;
 }
 
 // Calculate Price
-function calculatePrice(memory8, memory16, gb256, gb512, tb1, df, dc) {
-    if (gb256 = 0) {
-        common()
+function calculatePrice(memory8, memory16, storagegb256, storagegb512, storagetb1, df, dc) {
+    if (storagegb256 = 0) {
+        commonAll()
     }
-    else if (gb512 = 100) {
-        common()
+    else if (storagegb512 = 100) {
+        commonAll()
     }
-    else if (tb1 = 180) {
-        common()
+    else if (storagetb1 = 180) {
+        commonAll()
     }
 
     else if (dc = 20) {
-        common()
+        commonAll()
     }
     else if (df = 1) {
-        common()
+        commonAll()
     }
     else if (memory16 = 180) {
-        common()
+        commonAll()
     }
     else if (memory8 = 0) {
-        common()
+        commonAll()
     }
 }
 
@@ -94,10 +95,16 @@ document.getElementById("promo-code-btn").addEventListener("click", function () 
         const totalBotomPrice = parseInt(totalBotomText.innerText);
         const newupdate = totalBotomPrice * 20 / 100;
         const updatePrice = totalBotomPrice - newupdate
-        totalBotomText.innerText = updatePrice;
+        totalBotomText.innerText = updatePrice; 
+        document.getElementById("promo-code-btn").disabled=true;
+
     }
     // Wrong Input alert
     else {
         alert("Opps Wrong Promo Code!!!") 
     }
+
+  
+    promoInput.value = '';
+
 });
